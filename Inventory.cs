@@ -19,5 +19,17 @@ namespace Lemonade_Stand_Code{
         public int Lemons { get => lemons; set => lemons = value; }
         public int Sugar { get => sugar; set => sugar = value; }
         public int Ice { get => ice; set => ice = value; }
+
+        public static void PrintInventory(Player p)
+        {
+            System.Console.WriteLine("You have $" + p.munny);
+            System.Console.WriteLine("You have " + p.inventory.Cups + " cups");
+            System.Console.WriteLine();
+            System.Console.WriteLine("You have " + p.inventory.Lemons + " lemons");
+            System.Console.WriteLine();
+            System.Console.WriteLine("You have " + p.inventory.Sugar + " sugar");
+            System.Console.WriteLine();
+            System.Console.WriteLine("You have " + p.inventory.Ice + " ice");
+        }
     }
 }

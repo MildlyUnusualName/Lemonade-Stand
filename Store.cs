@@ -18,29 +18,105 @@ namespace Lemonade_Stand_Code
         static double ice250 = 2.13;
         static double ice500 = 3.73;
 
-        public static double BuyCups(int numCups)
+        public static void BuyCups(int numCups, Player p)
         {
             if (numCups == 25)
             {
-                return cups25;
+                p.inventory.Cups += numCups;
+                p.munny -= cups25;
             }
             else if (numCups == 50)
             {
-                return cups50;
+                p.inventory.Cups += numCups;
+                p.munny -= cups50;
             }
             else if (numCups == 100)
             {
-                return cups100;
+                p.inventory.Cups += numCups;
+                p.munny -= cups100;
             }
             else
             {
-                System.Console.WriteLine("That is not a valid amount of cups");
-                BuyCups(int.Parse(System.Console.ReadLine()));
-                return 0;
+                System.Console.WriteLine("That is not a valid amount of cups, try again.");
+                BuyCups(int.Parse(System.Console.ReadLine()), p);
             }
             
         }
 
-       
+        public static void BuyLemons(int numLemons, Player p)
+        {
+            if (numLemons == 25)
+            {
+                p.inventory.Cups += numLemons;
+                p.munny -= cups25;
+            }
+            else if (numLemons == 50)
+            {
+                p.inventory.Cups += numLemons;
+                p.munny -= cups50;
+            }
+            else if (numLemons == 100)
+            {
+                p.inventory.Cups += numLemons;
+                p.munny -= cups100;
+            }
+            else
+            {
+                System.Console.WriteLine("That is not a valid amount of lemons, try again.");
+                BuyCups(int.Parse(System.Console.ReadLine()), p);
+            }
+
+        }
+
+        public static void BuySugar(int numSugar, Player p)
+        {
+            if (numSugar == 25)
+            {
+                p.inventory.Cups += numSugar;
+                p.munny -= cups25;
+            }
+            else if (numSugar == 50)
+            {
+                p.inventory.Cups += numSugar;
+                p.munny -= cups50;
+            }
+            else if (numSugar == 100)
+            {
+                p.inventory.Cups += numSugar;
+                p.munny -= cups100;
+            }
+            else
+            {
+                System.Console.WriteLine("That is not a valid amount of sugar, try again.");
+                BuyCups(int.Parse(System.Console.ReadLine()), p);
+            }
+
+        }
+
+        public static void BuyIce(int numIce, Player p)
+        {
+            if (numIce == 25)
+            {
+                p.inventory.Cups += numIce;
+                p.munny -= cups25;
+            }
+            else if (numIce == 50)
+            {
+                p.inventory.Cups += numIce;
+                p.munny -= cups50;
+            }
+            else if (numIce == 100)
+            {
+                p.inventory.Cups += numIce;
+                p.munny -= cups100;
+            }
+            else
+            {
+                System.Console.WriteLine("That is not a valid amount of ice, try again.");
+                BuyCups(int.Parse(System.Console.ReadLine()), p);
+            }
+
+        }
+
     }
 }
