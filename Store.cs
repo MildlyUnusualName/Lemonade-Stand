@@ -22,18 +22,18 @@ namespace Lemonade_Stand_Code
         {
             if (numCups == 25)
             {
-                p.inventory.Cups += numCups;
-                p.munny -= cups25;
+                p.Inventory.Cups += numCups;
+                p.Munny -= cups25;
             }
             else if (numCups == 50)
             {
-                p.inventory.Cups += numCups;
-                p.munny -= cups50;
+                p.Inventory.Cups += numCups;
+                p.Munny -= cups50;
             }
             else if (numCups == 100)
             {
-                p.inventory.Cups += numCups;
-                p.munny -= cups100;
+                p.Inventory.Cups += numCups;
+                p.Munny -= cups100;
             }
             else
             {
@@ -47,18 +47,18 @@ namespace Lemonade_Stand_Code
         {
             if (numLemons == 25)
             {
-                p.inventory.Cups += numLemons;
-                p.munny -= cups25;
+                p.Inventory.Cups += numLemons;
+                p.Munny -= cups25;
             }
             else if (numLemons == 50)
             {
-                p.inventory.Cups += numLemons;
-                p.munny -= cups50;
+                p.Inventory.Cups += numLemons;
+                p.Munny -= cups50;
             }
             else if (numLemons == 100)
             {
-                p.inventory.Cups += numLemons;
-                p.munny -= cups100;
+                p.Inventory.Cups += numLemons;
+                p.Munny -= cups100;
             }
             else
             {
@@ -72,18 +72,18 @@ namespace Lemonade_Stand_Code
         {
             if (numSugar == 25)
             {
-                p.inventory.Cups += numSugar;
-                p.munny -= cups25;
+                p.Inventory.Cups += numSugar;
+                p.Munny -= cups25;
             }
             else if (numSugar == 50)
             {
-                p.inventory.Cups += numSugar;
-                p.munny -= cups50;
+                p.Inventory.Cups += numSugar;
+                p.Munny -= cups50;
             }
             else if (numSugar == 100)
             {
-                p.inventory.Cups += numSugar;
-                p.munny -= cups100;
+                p.Inventory.Cups += numSugar;
+                p.Munny -= cups100;
             }
             else
             {
@@ -97,18 +97,18 @@ namespace Lemonade_Stand_Code
         {
             if (numIce == 25)
             {
-                p.inventory.Cups += numIce;
-                p.munny -= cups25;
+                p.Inventory.Cups += numIce;
+                p.Munny -= cups25;
             }
             else if (numIce == 50)
             {
-                p.inventory.Cups += numIce;
-                p.munny -= cups50;
+                p.Inventory.Cups += numIce;
+                p.Munny -= cups50;
             }
             else if (numIce == 100)
             {
-                p.inventory.Cups += numIce;
-                p.munny -= cups100;
+                p.Inventory.Cups += numIce;
+                p.Munny -= cups100;
             }
             else
             {
