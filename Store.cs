@@ -45,20 +45,20 @@ namespace Lemonade_Stand_Code
 
         public static void BuyLemons(int numLemons, Player p)
         {
-            if (numLemons == 25)
+            if (numLemons == 10)
             {
-                p.Inventory.Cups += numLemons;
-                p.Munny -= cups25;
+                p.Inventory.Lemons += numLemons;
+                p.Munny -= lemons10;
             }
-            else if (numLemons == 50)
+            else if (numLemons == 30)
             {
-                p.Inventory.Cups += numLemons;
-                p.Munny -= cups50;
+                p.Inventory.Lemons += numLemons;
+                p.Munny -= lemons30;
             }
-            else if (numLemons == 100)
+            else if (numLemons == 75)
             {
-                p.Inventory.Cups += numLemons;
-                p.Munny -= cups100;
+                p.Inventory.Lemons += numLemons;
+                p.Munny -= lemons75;
             }
             else
             {
@@ -70,20 +70,20 @@ namespace Lemonade_Stand_Code
 
         public static void BuySugar(int numSugar, Player p)
         {
-            if (numSugar == 25)
+            if (numSugar == 8)
             {
-                p.Inventory.Cups += numSugar;
-                p.Munny -= cups25;
+                p.Inventory.Sugar += numSugar;
+                p.Munny -= sugar8;
             }
-            else if (numSugar == 50)
+            else if (numSugar == 20)
             {
-                p.Inventory.Cups += numSugar;
-                p.Munny -= cups50;
+                p.Inventory.Sugar += numSugar;
+                p.Munny -= sugar20;
             }
-            else if (numSugar == 100)
+            else if (numSugar == 48)
             {
-                p.Inventory.Cups += numSugar;
-                p.Munny -= cups100;
+                p.Inventory.Sugar += numSugar;
+                p.Munny -= sugar48;
             }
             else
             {
@@ -95,20 +95,20 @@ namespace Lemonade_Stand_Code
 
         public static void BuyIce(int numIce, Player p)
         {
-            if (numIce == 25)
+            if (numIce == 100)
             {
-                p.Inventory.Cups += numIce;
-                p.Munny -= cups25;
+                p.Inventory.Ice += numIce;
+                p.Munny -= ice100;
             }
-            else if (numIce == 50)
+            else if (numIce == 250)
             {
-                p.Inventory.Cups += numIce;
-                p.Munny -= cups50;
+                p.Inventory.Ice += numIce;
+                p.Munny -= ice250;
             }
-            else if (numIce == 100)
+            else if (numIce == 500)
             {
-                p.Inventory.Cups += numIce;
-                p.Munny -= cups100;
+                p.Inventory.Ice += numIce;
+                p.Munny -= ice500;
             }
             else
             {
