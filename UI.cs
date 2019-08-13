@@ -17,6 +17,7 @@ namespace Lemonade_Stand_Code{
 
             Console.WriteLine("Welcome to Lemonade Stand. What will your name be?");
             tempName = Console.ReadLine();
+            Console.WriteLine();
 
             return tempName;
         }
@@ -29,6 +30,7 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("14 days");
             Console.WriteLine("21 days");
             days = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
 
             if (days == 7 || days == 14 || days == 21)
@@ -49,19 +51,19 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("Let's build your recipe!");
             Console.WriteLine();
             Console.WriteLine("Please set your price per cup ($x.xx): ");
-            r.PricePerCup = double.Parse(Console.ReadLine());
-            Console.WriteLine("Please set your lemons per cup: ");
-            r.LemonPerCup = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please set your sugar per cup: ");
-            r.SugarPerCup = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please set your ice per cup: ");
-            r.IcePerCup = int.Parse(Console.ReadLine());
+            r.PricePerPitcher = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please set your lemons per pitcher: ");
+            r.LemonPerPitcher = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please set your sugar per pitcher: ");
+            r.SugarPerPitcher = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please set your ice per pitcher: ");
+            r.IcePerPitcher = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Recipe: ");
-            Console.WriteLine("Cup Price |" + r.PricePerCup);
-            Console.WriteLine("Lemons    |" + r.LemonPerCup);
-            Console.WriteLine("Sugar     |" + r.SugarPerCup);
-            Console.WriteLine("Ice       |" + r.IcePerCup);
+            Console.WriteLine("         Cup Price | " + r.PricePerPitcher);
+            Console.WriteLine("         Lemons    | " + r.LemonPerPitcher);
+            Console.WriteLine("         Sugar     | " + r.SugarPerPitcher);
+            Console.WriteLine("         Ice       | " + r.IcePerPitcher);
         }
 
         public static void MainMenu(Player p)
@@ -121,18 +123,26 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine();
             Console.WriteLine("How many cups would you like to buy? Enter 0 to return.");
             Console.WriteLine();
-            Console.WriteLine("25 cups = $.84");
-            Console.WriteLine("50 cups = $1.67");
-            Console.WriteLine("100 cups = $3.20");
+            Console.WriteLine("1) 25 cups = $.84");
+            Console.WriteLine("2) 50 cups = $1.67");
+            Console.WriteLine("3) 100 cups = $3.20");
             choice = int.Parse(Console.ReadLine());
             //return choice
             if (choice == 0)
             {
                 UI.MainMenu(p);
             }
-            else if (choice == 25 || choice == 50 || choice == 100)
+            else if (choice == 1)
             {
-                return choice;
+                return 25;
+            }
+            else if(choice == 2)
+            {
+                return 50;
+            }
+            else if(choice == 3)
+            {
+                return 100;
             }
             else
             {
@@ -149,18 +159,26 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine();
             Console.WriteLine("How many lemons would you like to buy? Enter 0 to return.");
             Console.WriteLine();
-            Console.WriteLine("10 lemons = $.53");
-            Console.WriteLine("30 lemons = $2.13");
-            Console.WriteLine("75 lemons = $4.24");
+            Console.WriteLine("1) 10 lemons = $.53");
+            Console.WriteLine("2) 30 lemons = $2.13");
+            Console.WriteLine("3) 75 lemons = $4.24");
             choice = int.Parse(Console.ReadLine());
             //return choice
             if (choice == 0)
             {
                 UI.MainMenu(p);
             }
-            else if (choice == 10 || choice == 30 || choice == 75)
+            else if (choice == 1)
             {
-                return choice;
+                return 10;
+            }
+            else if (choice == 2)
+            {
+                return 30;
+            }
+            else if (choice == 3)
+            {
+                return 75;
             }
             else
             {
@@ -177,18 +195,26 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine();
             Console.WriteLine("How much sugar would you like to buy? Enter 0 to return.");
             Console.WriteLine();
-            Console.WriteLine("8 sugar = $.51");
-            Console.WriteLine("20 sugar = $1.55");
-            Console.WriteLine("48 sugar = $3.42");
+            Console.WriteLine("1) 8 sugar = $.51");
+            Console.WriteLine("2) 20 sugar = $1.55");
+            Console.WriteLine("3) 48 sugar = $3.42");
             choice = int.Parse(Console.ReadLine());
             //return choice
             if (choice == 0)
             {
                 UI.MainMenu(p);
             }
-            else if (choice == 8 || choice == 20 || choice == 48)
+            else if (choice == 1)
             {
-                return choice;
+                return 8;
+            }
+            else if (choice == 2)
+            {
+                return 20;
+            }
+            else if (choice == 3)
+            {
+                return 48;
             }
             else
             {
@@ -205,18 +231,26 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine();
             Console.WriteLine("How much ice would you like to buy? Enter 0 to return.");
             Console.WriteLine();
-            Console.WriteLine("100 ice = $.93");
-            Console.WriteLine("250 ice = $2.13");
-            Console.WriteLine("500 ice = $3.73");
+            Console.WriteLine("1) 100 ice = $.93");
+            Console.WriteLine("2) 250 ice = $2.13");
+            Console.WriteLine("3) 500 ice = $3.73");
             choice = int.Parse(Console.ReadLine());
             //return choice
             if (choice == 0)
             {
                 UI.MainMenu(p);
             }
-            else if (choice == 100 || choice == 250 || choice == 500)
+            else if (choice == 1)
             {
-                return choice;
+                return 100;
+            }
+            else if (choice == 2)
+            {
+                return 250;
+            }
+            else if (choice == 3)
+            {
+                return 500;
             }
             else
             {

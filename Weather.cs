@@ -2,13 +2,13 @@ namespace Lemonade_Stand_Code
 {
     public class Weather
     {
-        string[] forecastOptions = { "Cloudy", "Sunny", "Hazy", "Rainy" };
+        static string[] forecastOptions = { "Cloudy", "Sunny", "Hazy", "Rainy" };
         int temperature;
         string forecast;
 
-        public Weather(int temper, string forecast)
+        public Weather(int temperature, string forecast)
         {
-            this.temperature = temper;
+            this.temperature = temperature;
             this.forecast = forecast;
         }
 

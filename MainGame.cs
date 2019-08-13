@@ -8,16 +8,25 @@ namespace Lemonade_Stand_Code
         public static void RunGame()
         {
             Player player1 = new Player(UI.NewName());
-            List<Day> gameDays = new List<Day>();
+            Recipe recipe1 = new Recipe(0, 0, 0, 0);
+            List<Day> dayOfGame = new List<Day>();
             int dayCount = UI.NewNumDays();
-            for (int i = 0; i <= dayCount; i++)
+
+            UI.MainMenu(player1);
+
+            for (int i = 1; i <= dayCount; i++)
             {
-                //gameDays.Add();
+                Console.WriteLine();
+                Console.WriteLine("Day " + i + "!");
+                Day _newDay = new Day();
+                UI.NewRecipe(recipe1);
+                dayOfGame.Add(_newDay);
+
             };
             
-            Recipe recipe1 = new Recipe(0,0,0,0);
-            UI.MainMenu(player1);
-            UI.NewRecipe(recipe1);
+            
+            
+            
         }
 
     }

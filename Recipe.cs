@@ -6,23 +6,24 @@ namespace Lemonade_Stand_Code
 {
     public class Recipe
     {
-        private double pricePerCup;
-        private int lemonPerCup;
-        private int sugarPerCup;
-        private int icePerCup;
+        private double pricePerPitcher;
+        private int lemonPerPitcher;
+        private int sugarPerPitcher;
+        private int icePerPitcher;
 
         public Recipe(double price, int lemon, int sugar, int ice)
         {
-            this.PricePerCup = price;
-            this.lemonPerCup = lemon;
-            this.sugarPerCup = sugar;
-            this.icePerCup = ice;
+            this.PricePerPitcher = price;
+            this.lemonPerPitcher = lemon;
+            this.sugarPerPitcher = sugar;
+            this.icePerPitcher = ice;
+
         }
 
-        public double PricePerCup { get => pricePerCup; set => pricePerCup = value; }
-        public int LemonPerCup { get => lemonPerCup; set => lemonPerCup = value; }
-        public int SugarPerCup { get => sugarPerCup; set => sugarPerCup = value; }
-        public int IcePerCup { get => icePerCup; set => icePerCup = value; }
+        public double PricePerPitcher { get => pricePerPitcher; set => pricePerPitcher = value; }
+        public int LemonPerPitcher { get => lemonPerPitcher; set => lemonPerPitcher = value; }
+        public int SugarPerPitcher { get => sugarPerPitcher; set => sugarPerPitcher = value; }
+        public int IcePerPitcher { get => icePerPitcher; set => icePerPitcher = value; }
     }
 
 }
