@@ -47,7 +47,7 @@ namespace Lemonade_Stand_Code
         {
             if (numLemons == 10)
             {
-                p.Inventory.Lemons += numLemons;
+                p.Inventory.Lemons += 10;
                 p.Munny -= lemons10;
             }
             else if (numLemons == 30)

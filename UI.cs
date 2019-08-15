@@ -30,7 +30,7 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("14 days");
             Console.WriteLine("21 days");
             days = int.Parse(Console.ReadLine());
-            Console.WriteLine();
+            Console.Clear();
 
 
             if (days == 7 || days == 14 || days == 21)
@@ -46,6 +46,14 @@ namespace Lemonade_Stand_Code{
             }
         }
 
+        public static void DisplayWeather(Weather w)
+        {
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("Forecast for the day is: " + w.Forecast + "!");
+            Console.WriteLine("Maximum temperature for the day is " + w.Temperature + " degrees Fahrenheit.");
+            Console.WriteLine();
+        }
+
         public static void NewRecipe(Recipe r)
         {
             Console.WriteLine("Let's build your recipe!");
@@ -59,11 +67,18 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("Please set your ice per pitcher: ");
             r.IcePerPitcher = int.Parse(Console.ReadLine());
 
+            Console.Clear();
+
+        }
+
+        public static void PrintRecipe(Recipe r)
+        {
             Console.WriteLine("Recipe: ");
             Console.WriteLine("         Cup Price | " + r.PricePerPitcher);
             Console.WriteLine("         Lemons    | " + r.LemonPerPitcher);
             Console.WriteLine("         Sugar     | " + r.SugarPerPitcher);
             Console.WriteLine("         Ice       | " + r.IcePerPitcher);
+            Console.WriteLine();
         }
 
         public static void MainMenu(Player p)
@@ -111,7 +126,7 @@ namespace Lemonade_Stand_Code{
             }
             else
             {
-                //Continue with Game
+                Console.Clear(); //Continue with Game
             }
 
         }
@@ -127,6 +142,8 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("2) 50 cups = $1.67");
             Console.WriteLine("3) 100 cups = $3.20");
             choice = int.Parse(Console.ReadLine());
+            Console.Clear();
+            
             //return choice
             if (choice == 0)
             {
@@ -163,6 +180,8 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("2) 30 lemons = $2.13");
             Console.WriteLine("3) 75 lemons = $4.24");
             choice = int.Parse(Console.ReadLine());
+            Console.Clear();
+
             //return choice
             if (choice == 0)
             {
@@ -199,6 +218,8 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("2) 20 sugar = $1.55");
             Console.WriteLine("3) 48 sugar = $3.42");
             choice = int.Parse(Console.ReadLine());
+            Console.Clear();
+
             //return choice
             if (choice == 0)
             {
@@ -235,6 +256,8 @@ namespace Lemonade_Stand_Code{
             Console.WriteLine("2) 250 ice = $2.13");
             Console.WriteLine("3) 500 ice = $3.73");
             choice = int.Parse(Console.ReadLine());
+            Console.Clear();
+
             //return choice
             if (choice == 0)
             {
