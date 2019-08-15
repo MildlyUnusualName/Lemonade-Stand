@@ -12,19 +12,25 @@ namespace Lemonade_Stand_Code
             List<Day> dayOfGame = new List<Day>();
             int dayCount = UI.NewNumDays();
 
-            UI.MainMenu(player1);
+            
 
             for (int i = 1; i <= dayCount; i++)
             {
+
                 Console.WriteLine();
                 Console.WriteLine("Day " + i + "!");
-                Day _newDay = new Day();
-                UI.NewRecipe(recipe1);
+                Day _newDay = new Day(player1);
+
+                if (_newDay.CupsInPitcher == -1)
+                {
+                    return;
+                }
+
                 dayOfGame.Add(_newDay);
 
             };
-            
-            
+
+            Console.WriteLine($"Your final dollar amount is {player1.Munny} which equals a total profit of {player1.Munny - 20}");
             
             
         }

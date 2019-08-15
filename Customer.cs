@@ -137,31 +137,31 @@ namespace Lemonade_Stand_Code{
             int cold = 0;
 
 
-            if (c.lemonPreference < r.LemonPerPitcher)
+            if (c.lemonPreference < r.LemonPerPitcher || c.lemonPreference > r.LemonPerPitcher)
             {
                 sour = 1;
             }
-            if (c.sugarPreference < r.SugarPerPitcher)
+            if (c.sugarPreference < r.SugarPerPitcher || c.sugarPreference > r.SugarPerPitcher)
             {
                 sweet = 1;
             }
-            if (c.icePreference < r.IcePerPitcher)
+            if (c.icePreference < r.IcePerPitcher || c.icePreference > r.IcePerPitcher)
             {
                 cold = 1;
             }
-            if (c.pricePreference < r.PricePerPitcher)
+            if (c.pricePreference < r.PricePerPitcher || c.pricePreference > r.PricePerPitcher)
             {
                 pricey = 1;
             }
 
-            if (sour + pricey + sweet + cold >= 2)
+            if (sour + pricey + sweet + cold <= 2)
             {
-                Console.WriteLine($"Customer {count} was satisfied overall.");
+                Console.WriteLine($"Customer {count+1} was satisfied overall.");
                 c.Satisfied = true;
             }
             else
             {
-                Console.WriteLine($"Customer {count} was disatisfied.");
+                Console.WriteLine($"Customer {count+1} was disatisfied.");
                 c.satisfied = false;
             }
             return 1;

@@ -6,7 +6,7 @@ namespace Lemonade_Stand_Code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MainGame.RunGame();
         }
     }
 }

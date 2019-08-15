@@ -124,6 +124,10 @@ namespace Lemonade_Stand_Code{
                 Store.BuyIce(UI.StoreIce(p), p);
                 UI.MainMenu(p);
             }
+            else if (option == 0)
+            {
+                return;
+            }
             else
             {
                 Console.Clear(); //Continue with Game

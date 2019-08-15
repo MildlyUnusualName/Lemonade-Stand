@@ -1,0 +1,10 @@
+C:\Users\nolan\source\repos\Lemonade-Stand-master\obj\Debug\netcoreapp2.2\Lemonade Stand Code.csproj.CoreCompileInputs.cache
+C:\Users\nolan\source\repos\Lemonade-Stand-master\obj\Debug\netcoreapp2.2\Lemonade Stand Code.AssemblyInfoInputs.cache
+C:\Users\nolan\source\repos\Lemonade-Stand-master\obj\Debug\netcoreapp2.2\Lemonade Stand Code.AssemblyInfo.cs
+C:\Users\nolan\source\repos\Lemonade-Stand-master\bin\Debug\netcoreapp2.2\Lemonade Stand Code.deps.json
+C:\Users\nolan\source\repos\Lemonade-Stand-master\bin\Debug\netcoreapp2.2\Lemonade Stand Code.runtimeconfig.json
+C:\Users\nolan\source\repos\Lemonade-Stand-master\bin\Debug\netcoreapp2.2\Lemonade Stand Code.runtimeconfig.dev.json
+C:\Users\nolan\source\repos\Lemonade-Stand-master\bin\Debug\netcoreapp2.2\Lemonade Stand Code.dll
+C:\Users\nolan\source\repos\Lemonade-Stand-master\bin\Debug\netcoreapp2.2\Lemonade Stand Code.pdb
+C:\Users\nolan\source\repos\Lemonade-Stand-master\obj\Debug\netcoreapp2.2\Lemonade Stand Code.dll
+C:\Users\nolan\source\repos\Lemonade-Stand-master\obj\Debug\netcoreapp2.2\Lemonade Stand Code.pdb
